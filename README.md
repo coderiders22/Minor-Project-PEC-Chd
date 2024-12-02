@@ -63,17 +63,4 @@ We welcome contributions from the community! If you'd like to contribute, please
    git commit -m "Description of your changes"
    git push origin feature-name
 
-### Key Sections Included:
-1. **Project Overview**: Describes the project and its purpose in healthcare.
-2. **Mission**: Summarizes the goals of the project.
-3. **Team Members**: Lists all contributors and their roles in the project.
-4. **Key Features**: Highlights the main features of the project.
-5. **Technologies Used**: Specifies the libraries, tools, and frameworks used.
-6. **Contributing**: Explains how to contribute to the project, including guidelines.
-7. **Contribution Guidelines**: Ensures that contributors follow best practices.
-8. **License**: Information about the project's license.
-9. **Acknowledgements**: Credits the resources and individuals who contributed to the project.
-10. **Contact**: Provides contact information for the team.
-
-This complete README file is ready to be added to your GitHub repository. Let me know if you'd like any more adjustments!
 
