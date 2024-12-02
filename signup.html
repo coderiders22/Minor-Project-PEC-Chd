@@ -84,9 +84,6 @@
             <a href="index.html" class="navbar-link title-md">Home</a>
           </li>
 
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">About</a>
-          </li>
 
           <li class="navbar-item">
             <a href="login.html" class="navbar-link title-md">Login</a>
@@ -94,10 +91,6 @@
 
           <li class="navbar-item active">
             <a href="signup.html" class="navbar-link title-md">Signup</a>
-          </li>
-
-          <li class="navbar-item">
-            <a href="#" class="navbar-link title-md">Contact</a>
           </li>
 
         </ul>
@@ -109,7 +102,7 @@
         <ion-icon name="menu-outline"></ion-icon>
       </button>
 
-      <a href="#" class="btn has-before title-md">Make Predictions</a>
+      <a href="#" class="btn has-before title-md">Check your Health</a>
 
       <div class="overlay" data-nav-toggler data-overlay></div>
 
@@ -119,7 +112,7 @@
 
 <section class="signup">
   <div class="container">
-      <img src="assets/videos/signup.gif" alt="Animated Icon" class="animated-icon">
+      <img src="assets/videos/4.gif" alt="Animated Icon" class="animated-icon">
       <h2>Create Your Account</h2>
       <form id="signupForm">
           <div class="form-group">
@@ -463,6 +456,56 @@
     
         </div>
       </footer>
+      <style>
+        .footer { background-size: auto; background-color:rgb(0, 0, 0); }
+      
+      .footer-top { grid-template-columns: repeat(4, 1fr);  }
+      
+      .footer-brand {
+        grid-column: 1 / 5;
+        padding: 28px 56px;
+        display: grid;
+        grid-template-columns: 0.3fr 1fr;
+        align-items: center;
+        background-color: #3f3839;
+      }
+      
+      .footer .logo { margin-block-end: 0; }
+      
+      .contact-list { justify-content: space-between; }
+      
+      .contact-list::after {
+        top: 0;
+        left: 50%;
+        width: 2px;
+        height: 100%;
+      
+      }
+      .back-top-btn {
+        background-color: #e63946;
+      }
+      
+      .contact-item { margin-block-start: 0; }
+      
+      
+      .animated-icon {
+      display: block;
+      margin: 0 auto 20px;
+      width: 60px;
+      height: auto;
+      }
+      @media (min-width: 768px) {
+      .animated-icon {
+        width: 80px;
+      }
+      }
+      @media (min-width: 1024px) {
+      
+      .animated-icon {
+        width: 100px;
+      }
+      }
+      </style>
 
 
 
