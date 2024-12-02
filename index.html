@@ -159,106 +159,19 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="home">
-        <!-- Video Background -->
-        <video autoplay muted loop playsinline class="hero-video-bg">
-          <source src="./assets/videos/hero-bg.mp4" type="video/mp4">
-          Your browser does not support the video tag.
+      <section class="heroes">
+        <video autoplay muted loop id="bg-video">
+          <source src="assets/videos/hero-bg.mp4" type="video/mp4">
         </video>
-      
-        <div class="container">
-      
-          <div class="hero-content">
-      
-            <p class="hero-subtitle has-before" data-reveal="left">Welcome to Lung Sound Diagnostics</p>
-      
-            <h1 class="headline-lg hero-title" data-reveal="left">
-              Transforming Respiratory <br>
-              Health with AI.
-            </h1>
-      
-     
-           
-            
-              
-              </div>
-      
-            </div>
-      
-          </div>
-      
-       
-      
+        <div class="container heroes-content">
+          <h1>Welcome to Lung Sound Diagnostics</h1>
+          <p>Transforming Respiratory Health with AI.</p>
+         
         </div>
+        <div class="overlay"></div>
       </section>
       
-      <!-- Additional CSS -->
-      <style>
- .hero {
-  position: relative;
-  overflow: hidden;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.hero-video-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -1;
-}
-
-.container {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-.hero-content {
-  display: flex;
-  flex-direction: row; /* Arrange items horizontally */
-  align-items: center; /* Align items vertically to the center */
-  justify-content: space-between; /* Add space between items */
-  gap: 20px; /* Spacing between items */
-  text-align: left;
-  color: #fff;
-}
-
-.hero-subtitle, .hero-title, .hero-card {
-  flex: 1; /* Let items share equal width */
-  max-width: 30%; /* Restrict max width */
-}
-
-.wrapper {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.input-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.input-field {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  outline: none;
-}
-
-ion-icon {
-  margin-left: -30px;
-  color: #888;
-}
-
-      </style>
       
       
 
