@@ -364,6 +364,12 @@ body.nav-active { overflow: hidden; }
   width: 100%;
   height: 100vh;
 }
+.navbar-item.active .navbar-link {
+  color: #c73c2f; /* Highlighted color */
+  font-weight: bold;
+  text-shadow: 0 0 10px #c23e05, 0 0 20px #FFB703;
+  position: relative;
+}
 
 .navbar {
   right: -300px;
