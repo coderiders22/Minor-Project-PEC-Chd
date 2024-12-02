@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Doclab - home</title>
+  <meta name="title" content="Doclab - home">
+  <meta name="description" content="This is a madical html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Rubik:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-bg.png">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preloader" data-preloader>
+    <div class="circle"></div>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="136" height="46" alt="Doclab home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="clsoe menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+        </div>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link title-md">Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">About</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="login.html" class="navbar-link title-md">Login</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="signup.html" class="navbar-link title-md">Signup</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link title-md">Contact</a>
+          </li>
+
+        </ul>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-pinterest"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline"></ion-icon>
+      </button>
+
+      <a href="#" class="btn has-before title-md">Make Predictions</a>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+  <section class="signup" style="background-image: url('./assets/images/footer-bg.png')">
+
+      <div class="container">
+          <img src="assets/videos/signup.gif" alt="Animated Icon" class="animated-icon">
+          <h2>Create Your Account</h2>
+          <form id="signupForm">
+              <div class="form-group">
+                  <label for="name"><i class="fas fa-user"></i> Full Name</label>
+                  <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+              </div>
+              <div class="form-group">
+                  <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
+                  <input type="email" id="email" name="email" placeholder="name@example.com" required>
+              </div>
+              <div class="form-group">
+                  <label for="password"><i class="fas fa-lock"></i> Password</label>
+                  <input type="password" id="password" name="password" placeholder="Create a password" required>
+              </div>
+              <div class="form-group">
+                  <label for="cpassword"><i class="fas fa-lock"></i> Confirm Password</label>
+                  <input type="password" id="cpassword" name="confirmPassword" placeholder="Confirm your password" required>
+              </div>
+       
+              <button type="submit" class="btn btn-primary">Sign Up</button>
+          </form>
+          <p class="redirect">Already have an account? <a href="login.html">Login</a>.</p>
+      </div>
+  </section>
+  
+      <!-- End of Login Section -->
+  
+
+  
+  
+  <style>
+
+.login {
+padding: 4rem 0; /* Ensure padding creates space */
+min-height: 100vh; /* Occupy the full viewport height */
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #f8f9fa; /* Light background for contrast */
+flex-direction: column; /* Stack items vertically */
+}
+
+/* Ensure container positions correctly */
+.signup .container {
+margin-top: 9rem; /* Add spacing if needed */
+max-width: 500px;
+width: 100%;
+}
+
+    /* Signup & Login Sections */
+.signup, .login {
+padding: 4rem 0;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.signup h2, .login h2 {
+text-align: center;
+margin-bottom: 2rem;
+font-size: 2rem;
+color: #1e3c72;
+position: relative;
+}
+
+.signup h2::after, .login h2::after {
+content: '';
+width: 50px;
+height: 3px;
+background-color: #ffdd57;
+position: absolute;
+left: 50%;
+bottom: -10px;
+transform: translateX(-50%);
+}
+
+.signup form, .login form {
+width: 100%;
+max-width: 500px;
+background-color: #f4f6f9;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+animation: slideUp 1s ease-out;
+}
+
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: bold;
+color: #1e3c72;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+width: 100%;
+padding: 0.75rem;
+border: 2px solid #e0e0e0;
+border-radius: 8px;
+transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="file"]:focus {
+border-color: #1e3c72;
+outline: none;
+}
+
+
+.btn .btn-primary {
+padding: 0.75rem 2rem; /* Adjusted padding for buttons */
+font-size: 1rem;
+border-radius: 50px;
+border: none;
+display: inline-block;
+cursor: pointer;
+text-decoration: none;
+margin: 0 10px; /* Added margin between the buttons */
+transition: all 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary {
+background-color: #1e3c72;
+color: #fff;
+
+
+}
+
+
+
+/* Signup & Login Sections */
+.signup, .login {
+padding: 4rem 0;
+background-color: #fff;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.signup h2, .login h2 {
+text-align: center;
+margin-bottom: 2rem;
+font-size: 2rem;
+color: #1e3c72;
+position: relative;
+}
+.signup .container { background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; } .login .container { background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; }
+.login .container {
+background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; } .login .container { background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px;  }
+
+
+.signup h2::after, .login h2::after {
+content: '';
+width: 50px;
+height: 3px;
+background-color: #ffdd57;
+position: absolute;
+left: 50%;
+bottom: -10px;
+transform: translateX(-50%);
+}
+
+.signup form, .login form {
+width: 100%;
+max-width: 500px;
+background-color: #f4f6f9;
+padding: 2rem;
+border-radius: 15px;
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+animation: slideUp 1s ease-out;
+
+}
+
+/* Apply the same button styles to the signup button */
+.signup .btn-primary {
+padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
+font-size: 1rem;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: #1e3c72; /* Primary button background color */
+color: #fff;
+transition: all 0.3s ease;
+}
+
+.login .btn-primary {
+padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
+font-size: 1rem;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: #1e3c72; /* Primary button background color */
+color: #fff;
+transition: all 0.3s ease;
+}
+.dashboard .btn-primary{
+padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
+font-size: 1rem;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: #1e3c72; /* Primary button background color */
+color: #fff;
+transition: all 0.3s ease;
+}
+
+.dashboard-card .btn-secondary{
+padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
+font-size: 1rem;
+border-radius: 50px;
+border: none;
+cursor: pointer;
+background-color: #1e3c72; /* Primary button background color */
+color: #fff;
+transition: all 0.3s ease;
+}
+
+.signup .btn-primary:hover {
+background-color: #ffdd57; /* Hover effect */
+color: #1e3c72;
+transform: scale(1.05); /* Slightly increase the size on hover */
+box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Form Inputs */
+.form-group {
+margin-bottom: 1.5rem;
+}
+
+.form-group label {
+display: block;
+margin-bottom: 0.5rem;
+font-weight: bold;
+color: #1e3c72;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"],
+.form-group input[type="file"] {
+width: 100%;
+padding: 0.75rem;
+border: 2px solid #e0e0e0;
+border-radius: 8px;
+transition: border-color 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group input[type="password"]:focus,
+.form-group input[type="file"]:focus {
+border-color: #1e3c72;
+outline: none;
+}
+
+/* Redirect Links */
+.redirect {
+text-align: center;
+margin-top: 1rem;
+color: #555;
+}
+
+.redirect a {
+color: #1e3c72;
+text-decoration: none;
+font-weight: bold;
+}
+
+.redirect a:hover {
+text-decoration: underline;
+}
+    </style>
+</article>
+</main>
+
+
+
+      <!-- 
+        - #HERO
+      -->
+
+      
+  
+      <footer class="footer" style="background-image: url('./assets/images/footer-bg.png')">
+        <div class="container">
+    
+          <div class="section footer-top">
+    
+            <div class="footer-brand" data-reveal="bottom">
+    
+              <a href="#" class="logo">
+                <img src="./assets/images/logo.svg" width="136" height="46" loading="lazy" alt="Doclab home">
+              </a>
+    
+              <ul class="contact-list has-after">
+    
+                <li class="contact-item">
+    
+                  <div class="item-icon">
+                    <ion-icon name="mail-open-outline"></ion-icon>
+                  </div>
+    
+                  <div>
+                    <p>
+                      Main Email : <a href="mailto:contact@doclab.com" class="contact-link">doclab.com</a>
+                    </p>
+    
+                    <p>
+                      Inquiries : <a href="mailto:Info@mail.com" class="contact-link">Info@doclab.com</a>
+                    </p>
+                  </div>
+    
+                </li>
+    
+                <li class="contact-item">
+    
+                  <div class="item-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+    
+                  <div>
+                    
+                  
+    
+                    <p>
+                      Mobile : <a href="tel:000232439493" class="contact-link">+91 8054776034</a>
+                    </p>
+                  </div>
+    
+                </li>
+    
+              </ul>
+    
+            </div>
+    
+            <div class="footer-list" data-reveal="bottom">
+    
+              <p class="headline-sm footer-list-title">About Us</p>
+    
+              <p class="text">
+                We harness AI to revolutionize respiratory healthcare, enabling accurate and efficient detection of diseases like COPD and pneumonia through automated analysis of lung sounds. Our mission: better diagnostics, faster interventions, and improved patient outcomes.
+              </p>
+    
+              <address class="address">
+                <ion-icon name="map-outline"></ion-icon>
+    
+                <span class="text">
+                  Punjab Engineering College, Sector-12 Chandigarh <br>
+                  
+                </span>
+              </address>
+    
+            </div>
+    
+            
+    
+            <ul class="footer-list" data-reveal="bottom">
+    
+              <li>
+                <p class="headline-sm footer-list-title">Useful Links</p>
+              </li>
+    
+              <li>
+                <a href="index.html" class="text footer-link">Home</a>
+              </li>
+    
+              <li>
+                <a href="login.html" class="text footer-link">Login</a>
+              </li>
+    
+              <li>
+                <a href="#" class="text footer-link">Contact Us</a>
+              </li>
+    
+    
+            </ul>
+    
+            <div class="footer-list" data-reveal="bottom">
+    
+              <p class="headline-sm footer-list-title">Subscribe</p>
+    
+              <form action="" class="footer-form">
+                <input type="email" name="email" placeholder="Email" class="input-field title-lg">
+    
+                <button type="submit" class="btn has-before title-md">Subscribe</button>
+              </form>
+    
+              <p class="text">
+                Get the latest updates via email. Any time you may unsubscribe
+              </p>
+    
+            </div>
+    
+          </div>
+    
+          <div class="footer-bottom">
+    
+            <p class="text copyright">
+              &copy; Doclab 2022 | All Rights Reserved by Manav Rai
+            </p>
+    
+            <ul class="social-list">
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-google"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="#" class="social-link">
+                  <ion-icon name="logo-pinterest"></ion-icon>
+                </a>
+              </li>
+    
+            </ul>
+    
+          </div>
+    
+        </div>
+      </footer>
+
+
+
+
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
