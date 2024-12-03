@@ -52,6 +52,10 @@
 
 
 
+  <!-- 
+    - #HEADER
+  -->
+
   <header class="header" data-header>
     <div class="container">
       <a href="#" class="logo">
@@ -146,52 +150,31 @@
 
 
 
+
   <main>
     <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="heroes">
-        <video autoplay muted loop id="bg-video">
-          <source src="assets/videos/hero-bg.mp4" type="video/mp4">
-        </video>
-        <div class="container heroes-content">
-          <h1>Welcome to Lung Sound Diagnostics</h1>
-          <p>Transforming Respiratory Health with AI.</p>
-         
-        </div>
-        <div class="overlay"></div>
-      </section>
-      
-
-      
-      
-
-
-
-      <!-- 
+          <!-- 
         - #ABOUT
       -->
 
-      <section class="section about" aria-labelledby="about-label" style="background-color: #FFF5E5; color: #4A4A4A;" id="about">
+      <section class="section about" aria-labelledby="about-label" style="background-color: #7f6f53; color: #5a5858; padding-top: 100px;" id="about">
         <div class="container">
           <div class="about-content">
-            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left" style="color: #D32F2F;">
+            <!-- Center the About Us heading, make it bigger and bold -->
+            <p class="section-subtitle title-lg has-after" id="about-label" data-reveal="left" style="color: #dfab11; text-align: center; margin-bottom: 20px;">
               About Us
             </p>
-            <h2 class="headline-md" data-reveal="left" style="color: #FF8C00;">
+            <h2 class="headline-md" data-reveal="left" style="color: #efefef; text-align: center; font-size: 3rem; font-weight: bold; margin-bottom: 30px;">
               Revolutionizing Respiratory Diagnostics
             </h2>
-            <p class="section-text" data-reveal="left">
+            <p class="section-text" data-reveal="left" style="text-align: center; color: #efefef;">
               Our project focuses on the automatic detection and classification of respiratory diseases using advanced
               deep learning techniques. By leveraging state-of-the-art methods, we aim to address the global health burden
               posed by respiratory conditions like COPD and pneumonia, facilitating early diagnosis and timely
               interventions.
             </p>
       
-            <ul class="tab-list" data-reveal="left">
+            <ul class="tab-list" data-reveal="left" style="text-align: center; color: #efefef;">
               <li>
                 <button class="tab-btn active" style="background-color: #FFCC80; color: #4A4A4A;">Vision</button>
               </li>
@@ -203,56 +186,65 @@
               </li>
             </ul>
       
-            <p class="tab-text" data-reveal="left">
+            <p class="tab-text" data-reveal="left" style="text-align: center; color: #efefef;">
               To develop an efficient, automated diagnostic tool capable of accurately identifying respiratory diseases,
               enhancing healthcare outcomes worldwide.
             </p>
       
             <div class="wrapper">
-              <ul class="about-list">
+              <ul class="about-list" style="text-align: center;">
                 <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline" style="color: #D32F2F;"></ion-icon>
-                  <span class="span">Leveraging deep learning for enhanced accuracy</span>
+                  <ion-icon name="checkmark-circle-outline" style="color: #dfab11; "></ion-icon>
+                  <span class="span " style="color: #efefef;">Leveraging deep learning for enhanced accuracy</span>
                 </li>
                 <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline" style="color: #D32F2F;"></ion-icon>
-                  <span class="span">Addressing global health challenges</span>
+                  <ion-icon name="checkmark-circle-outline" style="color: #dfab11; "></ion-icon>
+                  <span class="span" style="color: #efefef;">Addressing global health challenges</span>
                 </li>
                 <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline" style="color: #D32F2F;"></ion-icon>
-                  <span class="span">Promoting early detection and timely treatment</span>
+                  <ion-icon name="checkmark-circle-outline" style="color: #dfab11; "></ion-icon>
+                  <span class="span" style="color: #efefef;">Promoting early detection and timely treatment</span>
                 </li>
                 <li class="about-item" data-reveal="left">
-                  <ion-icon name="checkmark-circle-outline" style="color: #D32F2F;"></ion-icon>
-                  <span class="span">Developing robust and lightweight solutions</span>
+                  <ion-icon name="checkmark-circle-outline" style="color: #dfab11; "></ion-icon>
+                  <span class="span" style="color: #efefef;">Developing robust and lightweight solutions</span>
                 </li>
               </ul>
             </div>
           </div>
       
-          <figure class="about-banner" data-reveal="right">
+          <figure class="about-banner" data-reveal="right" style="text-align: center;">
             <img src="./assets/images/lungs.jpg" width="554" height="678" loading="lazy" alt="about banner"
               class="w-100" style="border: 5px solid #FFCC80; border-radius: 10px; margin-bottom: 150px;">
           </figure>
-          <style>
-            /* Responsive styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .about-banner-img {
-    max-width: 90%; /* Reduces width on smaller devices */
-    margin-bottom: 50px; /* Adjusts margin for compact view */
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .about-banner-img {
-    max-width: 100%; /* Allows it to take full width */
-    border-radius: 5px; /* Slightly less rounded corners */
-    margin-bottom: 30px; /* Adjusts spacing for very small screens */
-  }
-}
-          </style>
+      
         </div>
       </section>
+      
+      <!-- Add the following style for adjustments -->
+      <style>
+        /* Prevent overlap with the header */
+        .section .about-content {
+          padding-top: 100px; /* Adjusts the space from the top */
+        }
+      
+        /* Responsive styles for smaller screens */
+        @media screen and (max-width: 768px) {
+          .about-banner-img {
+            max-width: 90%; /* Reduces width on smaller devices */
+            margin-bottom: 50px; /* Adjusts margin for compact view */
+          }
+        }
+      
+        @media screen and (max-width: 480px) {
+          .about-banner-img {
+            max-width: 100%; /* Allows it to take full width */
+            border-radius: 5px; /* Slightly less rounded corners */
+            margin-bottom: 30px; /* Adjusts spacing for very small screens */
+          }
+        }
+      </style>
+      
       
 
       <section class="section listing" aria-labelledby="listing-label">
@@ -607,7 +599,7 @@
           <li>
             <a href="login.html" class="text footer-link">Login</a>
           </li>
-        
+         
           <li>
             <a href="signup.html" class="text footer-link">Sign Up</a>
           </li>
@@ -872,7 +864,6 @@ height: auto;
   -->
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/index.js"></script>
-  
   <!-- 
     - ionicon link
   -->

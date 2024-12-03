@@ -1,29 +1,50 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const app = express();
-const PORT = 5000;
+document.getElementById("loginForm").addEventListener("submit", handleLogin);
 
+function handleLogin(event) {
+  event.preventDefault();
 
-const users = [
-  { email: 'user@example.com', password: 'password123' },
-];
+  const submitButton = event.target.querySelector("button[type='submit']");
+  toggleSubmitButton(submitButton, true);
 
-app.use(bodyParser.json());
-
-app.post('/api/login', (req, res) => {
-  const { email, password } = req.body;
+  const email = document.getElementById("email").value.trim();
+  const password = document.getElementById("password").value;
 
   if (!email || !password) {
-    return res.status(400).json({ success: false, message: 'Email and password are required.' });
+    showError("Please fill in all fields.", submitButton);
+    return;
   }
 
-  const user = users.find((user) => user.email === email && user.password === password);
+  const loginData = { email, password };
 
-  if (!user) {
-    return res.status(401).json({ success: false, message: 'Invalid email or password.' });
-  }
+  fetch('http://127.0.0.1:5000/api/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(loginData),
+  })
+    .then((response) => {
+      if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+      return response.json();
+    })
+    .then((data) => {
+      if (data.success) {
+        alert("Login successful! Redirecting to dashboard...");
+        window.location.href = "dashboard.html"; // Redirect to the dashboard
+      } else {
+        showError(data.message || "An error occurred during login.", submitButton);
+      }
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+      showError("Login failed. Please try again.", submitButton);
+    });
+}
 
-  return res.status(200).json({ success: true, message: 'Login successful!' });
-});
+function toggleSubmitButton(button, isDisabled) {
+  button.disabled = isDisabled;
+  button.innerText = isDisabled ? "Logging in..." : "Log In";
+}
 
-app.listen(PORT, () => console.log(`Server running on http://127.0.0.1:${PORT}`));
+function showError(message, button) {
+  alert(message);
+  toggleSubmitButton(button, false);
+}

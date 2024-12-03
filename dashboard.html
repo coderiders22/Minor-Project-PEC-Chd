@@ -146,70 +146,104 @@
 
   
 
-<section class="signup">
-  <div class="container">
-      <img src="assets/videos/4.gif" alt="Animated Icon" class="animated-icon">
-      <h2>Create Your Account</h2>
-      <form id="signupForm">
-          <div class="form-group">
-              <label for="name"><i class="fas fa-user"></i> Full Name</label>
-              <input type="text" id="name" name="name" placeholder="Enter your full name" required>
-          </div>
-          <div class="form-group">
-              <label for="email"><i class="fas fa-envelope"></i> Email Address</label>
-              <input type="email" id="email" name="email" placeholder="name@example.com" required>
-          </div>
-          <div class="form-group">
-              <label for="password"><i class="fas fa-lock"></i> Password</label>
-              <input type="password" id="password" name="password" placeholder="Create a password" required>
-          </div>
-          <div class="form-group">
-              <label for="cpassword"><i class="fas fa-lock"></i> Confirm Password</label>
-              <input type="password" id="cpassword" name="confirmPassword" placeholder="Confirm your password" required>
-          </div>
-         
-          <button type="submit" class="btn btn-primary">Sign Up</button>
+  <section class="dashboard">
+    <div class="container">
+      <img src="assets/videos/6.gif" alt="Animated Icon" class="animated-icon">
+      <h2>Dashboard: <span id="username"></span></h2>
+      <p class="ps">Check Your Health</p>
+      <form id="healthCheckForm">
+        <div class="form-group">
+          <label for="audioFile"><i class="fas fa-upload"></i> Upload Your Audio File</label>
+          <input type="file" id="audioFile" name="audioFile" required>
+        </div>
+        <div class="form-actions">
+          <button type="button" class="btn btn-primary" id="testButton" disabled>Test</button>
+          <button type="button" class="btn btn-secondary" id="logoutButton">Logout</button>
+        </div>
       </form>
-      <p class="redirect">Already have an account? <a href="login.html">Login</a>.</p>
-  </div>
-</section>
-
+    </div>
+  </section>
   
-  <style>
-   /* Signup & Login Sections */
-.signup, .login {
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const audioFileInput = document.getElementById("audioFile");
+      const testButton = document.getElementById("testButton");
+      const logoutButton = document.getElementById("logoutButton");
+  
+      // Disable the "Test" button initially
+      testButton.disabled = true;
+  
+      // Enable the "Test" button only when a valid .wav file is uploaded
+      audioFileInput.addEventListener("change", function () {
+        const file = audioFileInput.files[0];
+  
+        if (file) {
+          // Get the file extension
+          const fileExtension = file.name.split('.').pop().toLowerCase();
+  
+          if (fileExtension === 'wav') {
+            // Enable the Test button
+            testButton.disabled = false;
+          } else {
+            alert("Only .wav files are allowed!");
+            audioFileInput.value = ""; // Clear the input
+            testButton.disabled = true; // Keep the Test button disabled
+          }
+        } else {
+          testButton.disabled = true; // Disable the button if no file is selected
+        }
+      });
+  
+      // Redirect to the home page on logout
+      logoutButton.addEventListener("click", function () {
+        window.location.href = "index.html"; // Replace 'home.html' with your actual home page URL
+      });
+    });
+  </script>
+  
+<style>
+    /* Dashboard Section */
+.dashboard {
   padding: 4rem 0;
   background: linear-gradient(to bottom, #362f13, #d07474) padding-box;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.ps {
+    text-align: center;
+}
 
-.signup h2, .login h2 {
+.dashboard h2 {
   text-align: center;
   margin-bottom: 2rem;
   font-size: 2rem;
   color: #E63946;
   position: relative;
 }
-.signup .container {  background: #f5f5f5;  padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; margin-top: 140px; } 
-.login .container { background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; }
-.login .container {
- background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; } .login .container { background-color: #fff; padding: 2rem; border-radius: 15px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); width: 100%; max-width: 500px; }
 
-
-.signup h2::after, .login h2::after {
+.dashboard h2::after {
   content: '';
   width: 50px;
   height: 3px;
-  color: #E63946;
+  background-color: #E63946;
   position: absolute;
   left: 50%;
   bottom: -10px;
   transform: translateX(-50%);
 }
 
-.signup form, .login form {
+.dashboard .container {
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  margin-top: 140px;
+}
+
+.dashboard form {
   width: 100%;
   max-width: 500px;
   background-color: #f4f6f9;
@@ -219,77 +253,18 @@
   animation: slideUp 1s ease-out;
 }
 
-/* Apply the same button styles to the signup button */
-.signup .btn-primary {
-  padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
-  font-size: 1.4rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  background: linear-gradient(to right, #E63946, #FB8500);
-  color: #7f3c3c; /* Primary button background color */
-  color: #fff;
-  text-align: center;
-  align-items: center;
-  transition: all 0.3s ease;
-  
-}
-
-.login .btn-primary {
-  padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
-  font-size: 1rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  background-color: #1e3c72; /* Primary button background color */
-  color: #fff;
-  transition: all 0.3s ease;
-}
-.dashboard .btn-primary{
-  padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
-  font-size: 1rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  background-color: #1e3c72; /* Primary button background color */
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.dashboard-card .btn-secondary{
-  padding: 0.75rem 2rem; /* Same padding as the hero section buttons */
-  font-size: 1rem;
-  border-radius: 50px;
-  border: none;
-  cursor: pointer;
-  background-color: #1e3c72; /* Primary button background color */
-  color: #fff;
-  transition: all 0.3s ease;
-}
-
-.signup .btn-primary:hover {
-  background-color: #ffdd57; /* Hover effect */
-  color: #000000;
-  transform: scale(1.05); /* Slightly increase the size on hover */
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-/* Form Inputs */
-.form-group {
+.dashboard .form-group {
   margin-bottom: 1.5rem;
 }
 
-.form-group label {
+.dashboard .form-group label {
   display: block;
   margin-bottom: 0.5rem;
   font-weight: bold;
   color: #121211;
 }
 
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="password"],
-.form-group input[type="file"] {
+.dashboard .form-group input[type="file"] {
   width: 100%;
   padding: 0.75rem;
   border: 2px solid #ce1c1c;
@@ -297,37 +272,48 @@
   transition: border-color 0.3s ease;
 }
 
-.form-group input[type="text"]:focus,
-.form-group input[type="email"]:focus,
-.form-group input[type="password"]:focus,
-.form-group input[type="file"]:focus {
+.dashboard .form-group input[type="file"]:focus {
   border-color: #f29810;
   outline: none;
 }
 
-/* Redirect Links */
-.redirect {
-  text-align: center;
-  margin-top: 1rem;
-  color: #e84040;
+.dashboard .btn-primary {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #1e3c72;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-.redirect a {
-  color: #59534a;
-  text-decoration: none;
-  font-weight: bold;
+.dashboard .btn-primary:hover {
+  background-color: #ffdd57;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.redirect a:hover {
-  text-decoration: underline;
+.dashboard .btn-secondary {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  background-color: #d07474;
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
-  </style>
-  
-  
-</article>
-</main>
+.dashboard .btn-secondary:hover {
+  background-color: #ffdd57;
+  color: #000;
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
 
+</style>  
 
 
       <!-- 
@@ -422,14 +408,7 @@
               <li>
                 <a href="about.html" class="text footer-link">About Us</a>
               </li>
-              <li>
-                <a href="login.html" class="text footer-link">Log In</a>
-              </li>
-             
-              <li>
-                <a href="signup.html" class="text footer-link">Sign Up</a>
-              </li>
-
+            
     
     
             </ul>
