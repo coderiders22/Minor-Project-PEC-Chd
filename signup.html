@@ -44,10 +44,6 @@
     - #PRELOADER
   -->
 
-  <div class="preloader" data-preloader>
-    <div class="circle"></div>
-  </div>
-
 
 
 
@@ -456,37 +452,126 @@
         </div>
       </footer>
       <style>
-        .footer { background-size: auto; background-color:rgb(0, 0, 0); }
-      
-      .footer-top { grid-template-columns: repeat(4, 1fr);  }
-      
-      .footer-brand {
-        grid-column: 1 / 5;
-        padding: 28px 56px;
-        display: grid;
-        grid-template-columns: 0.3fr 1fr;
-        align-items: center;
-        background-color: #3f3839;
-      }
-      
-      .footer .logo { margin-block-end: 0; }
-      
-      .contact-list { justify-content: space-between; }
-      
-      .contact-list::after {
-        top: 0;
-        left: 50%;
-        width: 2px;
-        height: 100%;
-      
-      }
-      .back-top-btn {
-        background-color: #e63946;
-      }
-      
-      .contact-item { margin-block-start: 0; }
-      
-      
+       .footer {
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  padding: 20px;
+  color: #fff;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.footer-brand {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 20px;
+  background-color: #3f3839;
+  text-align: center;
+}
+
+.footer .logo {
+  margin: 0 auto 20px;
+}
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.contact-link {
+  color: #e63946;
+  text-decoration: none;
+}
+
+.footer-list {
+  text-align: center;
+}
+
+.footer-list-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.footer-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-form .input-field {
+  width: 90%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.footer-form .btn {
+  padding: 10px 20px;
+  background-color: #e63946;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px 0;
+  border-top: 1px solid #555;
+}
+
+.social-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.social-link {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-brand {
+    text-align: left;
+  }
+
+  .footer-form .input-field {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-top {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .footer-brand {
+    grid-column: 1 / 2;
+  }
+
+  .footer-form .input-field {
+    width: 50%;
+  }
+}
+
       .animated-icon {
       display: block;
       margin: 0 auto 20px;
