@@ -1,6 +1,65 @@
 # Automatic Detection and Classification of Respiratory Diseases Using Deep Learning
 
-![Project Banner](./assets/images/project-banner.png) <!-- Optional: Replace with a relevant image -->
+## User Interface
+
+### Welcome Screen
+The AuscultaTech Welcome Screen is designed to set the tone for an innovative and user-friendly experience. With a striking visual design and intuitive layout, the screen offers:
+
+### **Navigation Options**: Easy access to essential features like "Sign Up," "Log In," and "Check Your Health."
+### **Inspirational Tagline**: "Transforming Respiratory Health with AI," emphasizing the platform's mission to revolutionize diagnostics.
+### **Call-to-Action Button**: A prominently displayed "Check Your Health" button encourages users to start their diagnostic journey.
+### This welcoming interface reflects the platform's commitment to simplifying respiratory health diagnostics through AI-driven technology.
+
+![Welcome to AUSCULTATECH Verification Platform](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/45570ddd25fe49bf8bbcfc005710e5ae28f9d37a/assets/Platform%20Screenshot%20/AuscultaTech%20Platform.png)
+
+![About AUSCULTATECH Verification Platform](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/about.png)
+
+### Feature Highlights
+Here are some of the advanced features that make **AUSCULTATECH** a comprehensive Health platform:
+
+![Our Features](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/features.png)
+
+## Developer Team
+
+### Meet Our Developers
+Our dedicated team is responsible for building and enhancing the VYC Verification Platform.
+
+- **Manav Rai**: Frontend Developer
+- **Vishwas Kisaniya**: Backend Developer & Model Integration
+- **Jashanpreet Salh**: Developed the deep learning-based model for automating the detection and classification of six common respiratory diseases using lung auscultation sounds.
+- **Pranshu Chauhan**: Co-developed the deep learning model, focusing on optimizing the classification accuracy and ensuring robust disease detection using audio data.
+
+## Login and Signup Pages
+
+### **Signup Page**
+New users can create an account by providing basic information such as their full name, email address, password, and uploading a profile photo. The signup page includes real-time validation to ensure the correctness of data.
+
+- **Signup Features**:
+  - Input fields for full name, email, password, and confirmation.
+  - Real-time validation to prevent errors.
+  - Secure password storage with encryption.
+
+![Signup Page](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/signup.jpeg)
+
+### **Login Page**
+The login page provides a simple and secure interface for users to access their accounts. Users must input their registered email and password to log in to the platform.
+
+- **Login Features**:
+  - Simple, user-friendly design.
+  - Error handling for incorrect logins.
+
+![Login Page](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/login.jpeg)
+
+
+### **Dashboard Overview**
+The AuscultaTech Dashboard provides a seamless and intuitive experience for users. Upon logging in, users are presented with the option to upload their lung auscultation audio files for a quick health check. Powered by advanced deep learning models, the platform analyzes the uploaded audio and provides a detailed report, including:
+
+ **Predicted Disease Class**: Identifies the specific respiratory disease (e.g., COPD, pneumonia, or bronchiectasis).
+ **Prediction Confidence**: Displays the accuracy level of the prediction.
+ **Waveform Graph**: Offers a visual representation of the lung sound's waveform, enhancing understanding of the audio data.
+The dashboard ensures that healthcare professionals and individuals can receive rapid and accurate insights into respiratory health.
+
+![Dashboard Page](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/dashboard.jpeg)
 
 ## **Project Overview**
 
