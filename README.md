@@ -24,11 +24,19 @@ Here are some of the advanced features that make **AUSCULTATECH** a comprehensiv
 ### Meet Our Developers
 Our dedicated team is responsible for building and enhancing the VYC Verification Platform.
 
-- **Manav Rai**: Frontend Developer
-- **Vishwas Kisaniya**: Backend Developer & Model Integration
-- **Jashanpreet Salh**: Developed the deep learning-based model for automating the detection and classification of six common respiratory diseases using lung auscultation sounds.
-- **Pranshu Chauhan**: Co-developed the deep learning model, focusing on optimizing the classification accuracy and ensuring robust disease detection using audio data.
+1. **Manav Rai** – Frontend Web Developer  
+   - Responsible for designing and developing the user interface for the web application.
 
+2. **Vishwas Kisaniya** – Model Integration  
+   - Integrated the deep learning model into the web application, ensuring smooth communication between the backend and frontend.
+
+3. **Jashanpreet Singh Salh** – Model Development  
+   - Developed the deep learning models to classify respiratory diseases based on lung auscultation sounds.
+
+4. **Pranshu Chauhan** – Model Development  
+   - Worked on the deep learning models, focusing on data preprocessing, model training, and optimization.
+
+---
 ## Login and Signup Pages
 
 ### **Signup Page**
@@ -71,22 +79,6 @@ Our system processes lung sound data to identify key patterns and provides fast,
 - **Improve Diagnostic Accuracy**: Leveraging AI to classify respiratory diseases accurately from lung sounds.
 - **Faster Intervention**: Helping healthcare professionals detect respiratory conditions early.
 - **Reduce Human Error**: Automating the diagnostic process to ensure consistent results and faster decisions.
-
----
-
-## **Team Members**
-
-1. **Manav Rai** – Frontend Web Developer  
-   - Responsible for designing and developing the user interface for the web application.
-
-2. **Vishwas Kisaniya** – Model Integration  
-   - Integrated the deep learning model into the web application, ensuring smooth communication between the backend and frontend.
-
-3. **Jashanpreet Singh Salh** – Model Development  
-   - Developed the deep learning models to classify respiratory diseases based on lung auscultation sounds.
-
-4. **Pranshu Chauhan** – Model Development  
-   - Worked on the deep learning models, focusing on data preprocessing, model training, and optimization.
 
 ---
 
