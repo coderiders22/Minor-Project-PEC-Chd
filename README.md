@@ -10,7 +10,6 @@ The AuscultaTech Welcome Screen is designed to set the tone for an innovative an
 **Call-to-Action Button**: A prominently displayed "Check Your Health" button encourages users to start their diagnostic journey.
 ## This welcoming interface reflects the platform's commitment to simplifying respiratory health diagnostics through AI-driven technology.
 
-### About Us Screen
 ![Welcome to AUSCULTATECH Verification Platform](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/45570ddd25fe49bf8bbcfc005710e5ae28f9d37a/assets/Platform%20Screenshot%20/AuscultaTech%20Platform.png)
 
 ![About AUSCULTATECH Verification Platform](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/about.png)
