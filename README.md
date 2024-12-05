@@ -18,7 +18,8 @@ The AuscultaTech Welcome Screen is designed to set the tone for an innovative an
 Here are some of the advanced features that make **AUSCULTATECH** a comprehensive Health platform:
 
 ![Our Features](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/4380c0da18e2339133efab086b990167d9b1b0dd/assets/Platform%20Screenshot%20/features.png)
-![Our Features](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/7707b9dc95a1a35991adf293c92279970b249db8/assets/Platform%20Screenshot%20/now.png)
+![Call To Action](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/d09b018d39af46ef2b616b6acf161e3275b22392/assets/Platform%20Screenshot%20/now.png)
+![Footer](https://github.com/coderiders22/Minor-Project-PEC-Chd/blob/d9aa54e01aad8107b8cceb8f756e7001435f7262/assets/Platform%20Screenshot%20/footer%201.png)
 
 ## Developer Team
 
